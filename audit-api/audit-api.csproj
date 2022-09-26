@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>audit_api</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Audit.WebApi.Core" Version="19.4.1" />
+    <PackageReference Include="Audit.NET.MongoDB" Version="19.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Audit.WebApi.Core" />
+    <None Remove="Audit.NET.MongoDB" />
+  </ItemGroup>
+</Project>
